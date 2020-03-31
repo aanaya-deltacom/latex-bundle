@@ -343,7 +343,7 @@ class LatexGenerator implements LatexGeneratorInterface
       }
       unset($output);
 
-      $process = new Process(sprintf(
+      $process = Process::fromShellCommandline(sprintf(
           'cd %s && HOME="/tmp" %s %s -interaction=nonstopmode -output-directory="%s" "%s"',
           $this->outputDir,
           $this->pdfLatexLocation,
