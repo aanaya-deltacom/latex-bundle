@@ -48,7 +48,7 @@ class LatexGenerator implements LatexGeneratorInterface
    * @param                   $maxAge
    * @param                   $pdfLatexLocation
    */
-  public function __construct($cacheDir, $env, \Twig_Environment $twig, $maxAge, $pdfLatexLocation) {
+  public function __construct($cacheDir, $env, $twig, $maxAge, $pdfLatexLocation) {
     $this->cacheDir   = $cacheDir;
     $this->env        = $env;
     $this->twig       = $twig;
